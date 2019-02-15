@@ -1,5 +1,21 @@
 (defpackage spartanian
-  (:use :cl))
+  (:use :cl)
+  (:export
+   :make-hash-tensor
+   :hash-tensor-default-value
+   :hash-tensor-index
+   :hash-tensor-indices-matrix
+   :hash-tensor-p
+   :hash-tensor-shape
+   :hash-tensor-value-vector
+   :make-coo
+   :coo-default-value
+   :coo-index
+   :coo-indices-matrix
+   :coo-p
+   :coo-shape
+   :coo-value-vector))
+
 (in-package :spartanian)
 
 ;;; Hashed Format
